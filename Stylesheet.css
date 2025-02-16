@@ -1,0 +1,93 @@
+.logo2 {
+    height: 400px; /* Adjust the height to enlarge the logo */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    display: block; /* Make the logo a block element */
+    margin: 0 auto; /* Remove the top margin to move it closer to the header */
+    padding-top: 10px; /* Add a small padding to the top if needed */
+}
+
+.logo {
+    height: 40px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+body {
+    font-family: sans-serif; 
+    color: antiquewhite; /* White text color */
+    background-color: black;
+    padding-top: 70px; /* Add padding to avoid content being hidden behind the fixed header */
+}
+
+header {
+    background-color: rgb(5, 151, 5); /* Light gray background for header */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items */
+    padding: 10px 20px; /* Add some padding */
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Make it stretch across the full width */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+header .logo {
+    margin-right: auto; /* Align the logo to the left */
+}
+
+header .nav {
+    margin-left: auto; /* Align the navigation to the right */
+}
+
+.nav-link {
+    margin-left: 20px; /* Add spacing between navigation links */
+    text-decoration: none; /* Remove underline from links */
+    color: #06601b; /* White text color */
+}
+
+.nav-link:hover {
+    color: black; /* Change text color on hover */
+}
+
+.server-link {
+    display: inline-block; /* Make the link a block element for better styling */
+    padding: 10px 20px;
+    background-color: #059705; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1px; /* Add some margin */
+    margin-bottom: 5px;
+}
+
+.server-link:hover {
+    background-color: #06601b; /* Darken the background color on hover */
+}
+
+.rules-list {
+    list-style-type: disc; /* Use bullet points for the rules */
+    padding-left: 20px; /* Indent the list */
+}
+
+footer.footer {
+    background-color: #059705 !important; /* Set the background color */
+    color: antiquewhite !important; /* Set the text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.server-status { /* Style for the server status area */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+}
+
+/* Example of responsive design - adjust breakpoints as needed */
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px; /* Add spacing between columns on smaller screens */
+    }
+}

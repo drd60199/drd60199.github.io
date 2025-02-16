@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TunnelCraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stylesheet.css">
+  </head>
+ <body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img src="Tunnelcraft_Notext.png" alt="TunnelCraft Logo" class="logo"> <!-- Replace with your logo image -->
+        </a>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Server Status</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="TunnelCraft_Logo1.png" alt="TunnelCraft Logo" class="logo2"> <!-- Replace with your logo image -->
+         
+            
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Join us</h2>
+                    <p>Join us on our Minecraft server!</p>
+                    <a href="minecraft://www.tunnelcraft.net" class="server-link">Connect to Server</a> <p>Or copy and paste this address: <code>www.tunnelcraft.net</code></p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Our rules</h2>
+                    <ul class="rules-list">
+                        <li>Be respectful to others.</li>
+                        <li>Don't cheat.</li>
+                    </ul>
+                    <p>Break any of these rules and you will be banned from the server.</p>
+                </div>
+            </div>
+
+             <div class="server-status">
+                <h2>Server Status</h2>
+                <p>Status: <span id="serverStatus">Checking...</span></p>
+                <p>Players Online: <span id="playersOnline">0</span></p>
+                <p>You can use this area to display server status information. You would typically use JavaScript to fetch this data from your server.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+          <span class="text-muted">&copy; 2024 TunnelCraft</span>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Example JavaScript to update server status (replace with your actual logic)
+        document.addEventListener('DOMContentLoaded', function() {
+            // In a real application, you would make an API call to your server here.
+            // For this example, we'll simulate a server response.
+            setTimeout(function() {
+                document.getElementById('serverStatus').textContent = 'Online';
+                document.getElementById('playersOnline').textContent = '25';
+            }, 2000); // Simulate a 2-second delay
+        });
+    </script>
+</body>
+</html>
